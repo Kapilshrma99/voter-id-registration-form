@@ -1,0 +1,77 @@
+import java.awt.Color;
+import javax.swing.*;
+import javax.swing.plaf.FontUIResource;
+import java.awt.event.*;
+public class addressdetails extends array{
+    JFrame jf4;
+    addressdetails(){
+        JFrame jf4 = new JFrame();
+        jf4.setSize(2000, 800);
+        jf4.setVisible(true);
+        jf4.setLayout(null);
+        JLabel jlf =new JLabel();
+jf4.add(jlf);
+        jlf.setText("Your Fourth Step 'Address Details'");
+jlf.setBounds(500, 0, 500, 100);
+jlf.setForeground(Color.BLUE);
+jlf.setFont(new FontUIResource("Italic", 50, 30));
+JLabel ad =new JLabel("Address:-");
+jf4.add(ad);
+ad.setBounds(100, 150, 150, 40);
+ad.setFont(new FontUIResource("Italic", 50, 25));
+JLabel nu =new JLabel("1.House /Flat NO:-");
+jf4.add(nu);
+nu.setBounds(150, 200, 250, 40);
+nu.setFont(new FontUIResource("Italic", 50, 20));
+JTextField hsn =new JTextField();
+jf4.add(hsn);
+hsn.setBounds(400, 200, 150, 40);
+JLabel st =new JLabel("2.Mohalla/Gali/Street/Road:-");
+jf4.add(st);
+st.setBounds(150, 250, 300, 40);
+st.setFont(new FontUIResource("Italic", 50, 20));
+JTextField gsn =new JTextField();
+jf4.add(gsn);
+gsn.setBounds(400, 250, 150, 40);
+JLabel ar =new JLabel("3.Area/Locality:-");
+jf4.add(ar);
+ar.setBounds(150, 300, 300, 40);
+ar.setFont(new FontUIResource("Italic", 50, 20));
+JTextField asn =new JTextField();
+jf4.add(asn);
+asn.setBounds(400, 300, 150, 40);
+JLabel to =new JLabel("4.Town/Village:-");
+jf4.add(to);
+to.setBounds(150, 350, 300, 40);
+to.setFont(new FontUIResource("Italic", 50, 20));
+JTextField tsn =new JTextField();
+jf4.add(tsn);
+tsn.setBounds(400, 350, 150, 40);
+JLabel pi =new JLabel("5.Pincode:-");
+jf4.add(pi);
+pi.setBounds(150, 400, 300, 40);
+pi.setFont(new FontUIResource("Italic", 50, 20));
+JTextField psn =new JTextField();
+jf4.add(psn);
+psn.setBounds(400, 400, 150, 40); 
+JButton f =new JButton("Submit");
+jf4.add(f);
+f.setBounds(500, 500, 80, 30); 
+f.addActionListener(new ActionListener(){
+    public void actionPerformed(ActionEvent e){
+        a[14][1]=ad.getText();
+        a[15][1]=nu.getText();
+        a[15][2]=hsn.getText();
+        a[16][1]=st.getText();
+        a[16][2]=gsn.getText();
+        a[17][1]=ar.getText();
+        a[17][2]=asn.getText();
+        a[18][1]=to.getText();
+        a[18][2]=tsn.getText();
+        a[19][1]=pi.getText();
+        a[19][2]=psn.getText();
+        new final1();
+        jf4.dispose();
+    }});
+    }   
+}
